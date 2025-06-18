@@ -1,8 +1,46 @@
-input {
+.box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 120px;
+}
+fieldset {
+  border: 3px solid #63f58f;
+}
+legend {
+  border: 1px solid white;
   padding: 10px;
+  text-align: center;
+  background-color: linear-gradient(to right, rgba(37, 81, 46, 0.1), rgba(14, 48, 19, 0.3));
+  border-radius: 8px;
+}
+.inputBox {
+  position: relative;
+  margin-bottom: 14px; /* Espaçamento entre os campos */
+}
+
+.inputUser {
+  background: none;
   border: none;
+  border-bottom: 1px solid white;
   outline: none;
+  color: white;
   font-size: 15px;
-  margin: 10px 0;
   width: 100%;
+  letter-spacing: 2px;
+}
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+  position: static; /* Adicione essa linha */
 }

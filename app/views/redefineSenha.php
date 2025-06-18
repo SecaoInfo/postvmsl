@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiscOM </title>
     <link rel="icon" type="image/svg+xml" href="image/iconhome.svg">
-    <link rel="stylesheet" href="./assets/css/pages/esqueceu/esqueceu.css">
+    <link rel="stylesheet" href="./assets/css/pages/redefineSenha/redefineSenha.css">
 </head>
 <body>
     <div>

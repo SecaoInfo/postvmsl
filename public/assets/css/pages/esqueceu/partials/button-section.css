@@ -1,13 +1,21 @@
-.inputSubmit {
-    cursor: pointer;
-    background-color: #557e65;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 10px;
-    font-size: 15px;
-}
-.inputSubmit:hover {
-    background-color: #63f58f;
-}
+input {
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            margin: 10px 0;
+            width: 100%;
+        }
+        .inputSubmit {
+            cursor: pointer;
+            background-color: #557e65;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        .inputSubmit:hover {
+            background-color: #63f58f;
+        }
