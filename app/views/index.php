@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('config.php');
+include_once('/../../config/config.php');
 
 // Verifica se existe um cookie para manter o login ativo
 if (isset($_COOKIE['user'])) {
@@ -70,8 +70,8 @@ if (isset($_COOKIE['user'])) {
     </div>
 
     <div class="box">
-        <a href="login.php">Login</a>
-        <a href="formulario.php">Cadastre-se</a>
+        <a href="/postvmsl/public/index.php?page=login">Login</a>
+        <a href="/postvmsl/public/index.php?page=formulario">Cadastre-se</a>
     </div>
 
     <!-- Rodapé -->

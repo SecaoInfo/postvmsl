@@ -26,7 +26,7 @@
             <input class="inputSubmit" type="submit" name="submit" value="Login">
         </form>
         <br><br>
-        <a id='esquece' href='esqueceu.php'>Esqueceu a Senha?</a>
+        <a id='esquece' href='/postvmsl/public/index.php?page=esqueceu'>Esqueceu a Senha?</a>
     </div>
 
 
