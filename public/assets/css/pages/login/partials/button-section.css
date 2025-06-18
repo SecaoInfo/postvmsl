@@ -1,0 +1,49 @@
+.inputSubmit {
+    cursor: pointer;
+    background-color: #557e65;
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+.inputSubmit:hover {
+    background-color: #63f58f;
+    cursor: pointer;
+}
+
+#esquece {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+#esquece:hover {
+    color: #63f58f;
+}
+
+/* Personalizar o botão 'Voltar' */
+a#voltar {
+    text-decoration: none;
+    color: white;
+    border: 3px ;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #557e65;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100px; /* Ajusta o tamanho do botão */
+    margin: 0 auto;
+}
+
+a#voltar:hover {
+    background-color: #63f58f;
+    cursor: pointer;
+}

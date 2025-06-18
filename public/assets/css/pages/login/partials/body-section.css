@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(37, 81, 46), rgb(14, 48, 19));
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    margin-top:30px;
+    border-radius: 15px;
+    color: #fff;
+    width: 90%; /* Ajusta a largura para dispositivos móveis */
+    max-width: 400px; /* Largura máxima para evitar que fique grande demais */
+}

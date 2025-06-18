@@ -1,0 +1,25 @@
+  /* Estilo do cabeçalho */
+  #headerone{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    z-index: 10; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Estilo do rodapé */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}

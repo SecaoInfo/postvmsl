@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .box {
+        width: 80%;
+        padding: 20px;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 95%;
+        padding: 15px;
+    }
+
+    a {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

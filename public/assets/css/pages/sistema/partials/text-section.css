@@ -1,0 +1,23 @@
+ /* Estilos para a tabela com fundo */
+ .table-bg {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px 15px 0 0;
+  word-wrap: break-word;
+  white-space: nowrap; /* Impede a quebra de linha dentro das células */
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Estilos para a tabela */
+.table-responsive {
+  overflow-x: auto; /* Permite scroll horizontal */
+  -webkit-overflow-scrolling: touch; /* Suaviza o scroll em dispositivos móveis */
+  padding: 10px; /* Ajusta o espaçamento */
+}
+
+/* Estilos para a caixa de pesquisa */
+.box-search {
+  display: flex;
+  justify-content: center;
+  gap: 0.1%;
+}

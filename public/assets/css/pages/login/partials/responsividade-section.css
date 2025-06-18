@@ -1,0 +1,31 @@
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    div {
+        width: 80%;
+        padding: 40px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .inputSubmit {
+        font-size: 14px;
+    }
+
+    #voltar {
+        width: 120px; /* Ajusta o tamanho do botão 'Voltar' para dispositivos menores */
+    }
+}
+
+/* Alinha o checkbox e o texto na mesma linha e evita quebra de linha */
+label {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    white-space: nowrap; /* Impede quebra de linha */
+}
+
+input[type="checkbox"] {
+    margin-right: -130px; /* Diminui a distância entre o checkbox e o texto */
+}

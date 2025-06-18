@@ -1,0 +1,8 @@
+input {
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 100%; /* Preenche toda a largura disponível */
+  margin-bottom: 10px; /* Espaço entre os campos */
+}

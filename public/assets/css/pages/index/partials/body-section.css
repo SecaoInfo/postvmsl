@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; /* Garante que a altura seja 100% da tela */
+    overflow-x: hidden; /* Impede que o conteúdo ultrapasse a largura da tela */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #333;
+    background: linear-gradient(to right, rgb(37, 81, 46), rgb(14, 48, 19)); /* Gradiente de fundo */
+    background-size: cover; /* Garante que o gradiente cubra toda a tela */
+    background-position: center; /* Centraliza o fundo */
+    height: 100%; /* Garante que o fundo ocupe a altura total da página */
+    display: flex; /* Centraliza os elementos */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}

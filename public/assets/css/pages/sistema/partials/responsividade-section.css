@@ -1,0 +1,30 @@
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+    .table-bg {
+        border-radius: 5px 5px 0 0;
+        padding: 2px;
+        margin: 2px auto;
+        overflow-x: auto;
+        width: 100%;
+        max-width: 100%;
+        transform: scale(0.8);
+        transform-origin: top left;
+        zoom: 0.8;
+    }
+
+    /* Ajuste do fundo no body para dispositivos móveis */
+    body {
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    /* Estilos para a navbar em dispositivos móveis */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar > * {
+        width: 100%;
+    }
+}
