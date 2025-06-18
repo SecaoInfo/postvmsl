@@ -1,0 +1,88 @@
+.inputBox {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .inputUser {
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 16px;
+        /* Garante que o tamanho da fonte seja adequado para evitar zoom */
+        width: 100%;
+        letter-spacing: 2px;
+    }
+    .labelInput {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    .inputUser:focus~.labelInput,
+    .inputUser:valid~.labelInput {
+        top: -20px;
+        font-size: 12px;
+        color: white;
+    }
+
+    #submit {
+        background-color: #557e65;
+        width: 100%;
+        border: none;
+        padding: 15px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    #submit:hover {
+        background-color: #63f58f;
+        cursor:pointer;
+    }
+
+    /* Estilos para a navbar */
+    .navbar {
+        background: linear-gradient(to right, rgb(19, 57, 15), rgb(7, 33, 9));;
+    }
+
+    #service {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        color: #ffffff;
+        /* Texto branco para o campo */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Fundo escuro com transparência */
+        background-color: #557e65;
+        /* Gradiente com transparência */
+    }
+    #service:hover{
+        background-color: #63f58f;
+    }
+
+    /* Estilos para as opções dentro do select */
+    #service option {
+        color: #000000;
+        /* Texto preto para as opções quando o menu estiver aberto */
+        background-color: #ffffff;
+        /* Fundo branco para as opções */
+    }
+
+    #service:focus {
+        outline: none;
+        border-color: #009688;
+        /* Cor do contorno ao focar no campo */
+    }
+
+    .inputBox {
+        position: relative;
+        margin-bottom: 60px; /* Aumentado de 15px para 25px */
+    }

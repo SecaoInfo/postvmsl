@@ -35,67 +35,7 @@ $result_chamados = $stmt_chamados->get_result();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>SiscOM</title>
     <link rel="icon" type="image/svg+xml" href="image/iconhome.svg">
-    <style>
-        /* Reutilizar o mesmo estilo do segundo código */
-        body {
-            background: linear-gradient(to right, rgb(57, 99, 65), rgb(17, 56, 22));
-            color: white;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1.2em;
-            margin: 0;
-            padding: 0;
-            width: auto;
-            overflow-x: hidden;
-        }
-
-        .navbar {
-            background: linear-gradient(to right, rgb(19, 57, 15), rgb(7, 33, 9));
-        }
-
-        .table-bg {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 15px 15px 0 0;
-            word-wrap: break-word;
-            white-space: nowrap;
-            max-width: 100%;
-            width: 100%;
-        }
-
-        .table-responsive {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            padding: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .table-bg {
-                border-radius: 5px 5px 0 0;
-                padding: 10px;
-                margin: 2px auto;
-                overflow-x: auto;
-                width: 100%;
-                max-width: 100%;
-                transform: scale(0.5);
-                transform-origin: top left;
-                zoom: 0.9;
-            }
-
-            body {
-                background-size: 100% 100%;
-                background-position: center;
-            }
-
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .navbar > * {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/pages/my_chamados/my_chamados.css">
 </head>
 
 <body>

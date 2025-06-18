@@ -62,7 +62,7 @@ if (isset($_COOKIE['user'])) {
 <body>
     <!-- Cabeçalho -->
     <div id='headerone'>
-       Vila alguma coisa São Lazáro  tel:3483-9093
+       Vila Militar São Lazáro  tel:3483-9093
     </div>
 
     <div class="icon-container">

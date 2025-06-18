@@ -1,3 +1,5 @@
+@import "../../../../assets/css/variables.css";
+@import "../../../../assets/css/typography.css";
 @import "./partials/responsividade-section.css";
 @import "./partials/text-section.css";
 @import "./partials/button-section.css";
