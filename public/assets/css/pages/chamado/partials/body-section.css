@@ -1,0 +1,25 @@
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(to right, rgb(37, 81, 46), rgb(14, 48, 19));
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        /* Garantir que o texto padrão tenha um tamanho confortável */
+        overflow-x: hidden;
+        /* Evita a rolagem horizontal */
+    }
+    .box {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 400px;
+        /* Máxima largura para telas grandes */
+        margin-top: 126px;
+        /* Adicionando mais margem no topo */
+    }
