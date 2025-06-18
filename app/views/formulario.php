@@ -18,7 +18,7 @@
         // print_r('<br>');
         // print_r('Endereço: ' . $_POST['endereco']);
 
-        include_once('config.php');
+        include_once('/../../config/config.php');
 
         $nome = $_POST['nome'];
         $cpf = $_POST['cpf'];
@@ -49,7 +49,7 @@
 
 </head>
 <body>
-    <a id='voltar' href="index.php">Voltar</a>
+    <a id='voltar' href="/postvmsl/public/index.php?page=index">Voltar</a>
     <div class="box">
         <form action="formulario.php" method="POST">
             <fieldset>

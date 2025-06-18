@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <a id="voltar" href="index.php">Voltar</a>
+    <a id="voltar" href="/postvmsl/public/index.php?page=index">Voltar</a>
     <div>
         <h1>Login</h1>
         <form action="testLogin.php" method="POST">
