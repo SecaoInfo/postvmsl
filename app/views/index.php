@@ -1,6 +1,9 @@
 <?php
-session_start();
-include_once('/../../config/config.php');
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+include_once(__DIR__ . '/../../config/config.php');
 
 // Verifica se existe um cookie para manter o login ativo
 if (isset($_COOKIE['user'])) {

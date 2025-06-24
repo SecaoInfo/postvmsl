@@ -8,7 +8,7 @@
 
     $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
-    $conexao->set_charset("utf8mb4");
+    //$conexao->set_charset("utf8mb4");
 
 
     // if($conexao->connect_errno)

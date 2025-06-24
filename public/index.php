@@ -4,7 +4,7 @@ session_start();
 require_once __DIR__ . '/../config/config.php';
 
 // Página solicitada
-$page = $_GET['page'] ?? 'home';
+$page = $_GET['page'] ?? 'index';
 
 
 
