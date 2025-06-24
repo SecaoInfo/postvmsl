@@ -10,7 +10,7 @@
 <body>
     <div>
         <h1>Nova Senha</h1>
-        <form action="attsenha.php" method="POST">
+        <form action="/postvmsl/public/index.php?page=attsenha" method="POST">
             <input type="password" name="nova_senha" placeholder="Digite sua nova senha" required>
             <br>
             <input type="password" name="confirma_senha" placeholder="Confirme sua nova senha" required>

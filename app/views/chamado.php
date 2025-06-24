@@ -1,6 +1,9 @@
 <?php
-session_start();
-include_once('/../../config/config.php');
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+include_once(__DIR__ . '/../../config/config.php');
 
 // Configurar a conexão para UTF-8
 $conexao->set_charset("utf8");
@@ -12,7 +15,7 @@ if (!isset($_SESSION['cpf']) && isset($_COOKIE['user'])) {
 
 // Verifica se o usuário está logado
 if (!isset($_SESSION['cpf'])) {
-    header('Location: login.php');
+    header('Location: /postvmsl/public/index.php?page=login');
     exit;
 }
 
@@ -93,7 +96,7 @@ if (isset($_POST['submit'])) {
         
         <div class="d-flex">
             <a href="/postvmsl/public/index.php?page=my_chamados" class="btn btn-secondary me-2">Meus Chamados</a>
-            <a href="/postvmsl/public/index.php?page=editar" class="btn btn-warning me-2">Editar Cadastro</a>
+            <a href="/postvmsl/public/index.php?page=editar_cadastro" class="btn btn-warning me-2">Editar Cadastro</a>
             <a href="/postvmsl/public/index.php?page=sair" class="btn btn-danger me-5">Sair</a>
         </div>
 

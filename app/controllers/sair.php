@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 // Remove todas as variáveis de sessão
 session_unset();
@@ -13,6 +15,6 @@ if (isset($_COOKIE['user'])) {
 }
 
 // Redireciona para o index.php
-header('Location: index.php');
+header('Location: /postvmsl/public/index.php?page=index');
 exit;
 ?>

@@ -1,13 +1,16 @@
 <?php
-session_start();
-include_once('/../../config/config.php');
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+include_once(__DIR__ . '/../../config/config.php');
 
 // Configurar a conexão para UTF-8
 $conexao->set_charset("utf8");
 
 // Verifica se o usuário está logado
 if (!isset($_SESSION['cpf'])) {
-    header('Location: login.php');
+    header('Location: /postvmsl/public/index.php?page=login');
     exit;
 }
 
