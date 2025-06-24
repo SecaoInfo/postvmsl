@@ -1,7 +1,9 @@
 <?php
-session_start();
-include_once('config.php');
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
+include_once(__DIR__ . '/../../config/config.php');
 // Verifica se existe um cookie para manter o login ativo
 if (isset($_COOKIE['user'])) {
     $cpf = $_COOKIE['user'];
@@ -19,9 +21,9 @@ if (isset($_COOKIE['user'])) {
 
         // Redireciona com base no tipo de usuário
         if ($sit_admin == 1) {
-            header('Location: sistema.php');
+            header('Location: /postvmsl/public/index.php?page=sistema');
         } else if ($sit_admin == 0) {
-            header('Location: chamado.php');
+            header('Location: /postvmsl/public/index.php?page=chamado');
         }
         exit;
     }
@@ -40,7 +42,7 @@ if (isset($_POST['submit']) && !empty($_POST['cpf']) && !empty($_POST['senha']))
         unset($_SESSION['cpf']);
         unset($_SESSION['senha']);
         setcookie('user', '', time() - 3600, '/'); // Remove qualquer cookie existente
-        header('Location: login.php');
+        header('Location: /postvmsl/public/index.php?page=login');
         exit;
     } else {
         // Usuário encontrado
@@ -58,15 +60,15 @@ if (isset($_POST['submit']) && !empty($_POST['cpf']) && !empty($_POST['senha']))
 
         // Redireciona com base no tipo de usuário
         if ($sit_admin == 1) {
-            header('Location: sistema.php');
+            header('Location: /postvmsl/public/index.php?page=sistema');
         } else if ($sit_admin == 0) {
-            header('Location: chamado.php');
+            header('Location: /postvmsl/public/index.php?page=chamado');
         }
         exit;
     }
 } else {
     // Não acessa
-    header('Location: login.php');
+    header('Location: /postvmsl/public/index.php?page=login');
     exit;
 }
 ?>

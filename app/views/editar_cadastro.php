@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Cadastro</title>
-    <link rel="icon" type="image/svg+xml" href="image/iconhome.svg">
+    <link rel="icon" type="image/png" href="./assets/images/iconhome.svg">
     <link rel="stylesheet" href="./assets/css/pages/editar_cadastro/editar_cadastro.css">
 </head>
 <body>

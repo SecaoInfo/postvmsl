@@ -1,7 +1,9 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
     session_start();
-    include_once('/../../config/config.php');
+}
 
+include_once(__DIR__ . '/../../config/config.php');
     $conexao->set_charset("utf8mb4");
 
     // print_r($_SESSION);
@@ -12,7 +14,7 @@
 
     // Verifica se o usuário está logado
     if (!isset($_SESSION['cpf'])) {
-        header('Location: login.php');
+        header('Location: /postvmsl/public/index.php?page=login');
         exit;
     }
    
@@ -42,7 +44,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>SiscOM </title>
-    <link rel="icon" type="image/svg+xml" href="image/iconhome.svg">
+    <link rel="icon" type="image/png" href="./assets/images/iconhome.svg">
     <link rel="stylesheet" href="./assets/css/pages/sistema/sistema.css">
 </head>
 

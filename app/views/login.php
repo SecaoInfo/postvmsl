@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiscOM</title>
-    <link rel="icon" type="image/svg+xml" href="image/iconhome.svg">
+    <link rel="icon" type="image/png" href="./assets/images/iconhome.svg">
     <link rel="stylesheet" href="./assets/css/pages/login/login.css">
 
 </head>
@@ -13,7 +13,7 @@
     <a id="voltar" href="/postvmsl/public/index.php?page=index">Voltar</a>
     <div>
         <h1>Login</h1>
-        <form action="testLogin.php" method="POST">
+        <form action="/postvmsl/public/index.php?page=testLogin" method="POST">
             <input name="cpf" placeholder="CPF" required>
             <br><br>
             <input type="password" name="senha" placeholder="Senha" required>

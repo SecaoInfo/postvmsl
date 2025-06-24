@@ -34,7 +34,7 @@ $result_chamados = $stmt_chamados->get_result();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>SiscOM</title>
-    <link rel="icon" type="image/svg+xml" href="image/iconhome.svg">
+    <link rel="icon" type="image/png" href="./assets/images/iconhome.svg">
     <link rel="stylesheet" href="./assets/css/pages/my_chamados/my_chamados.css">
 </head>
 
