@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('config.php');
+include_once('/../../config/config.php');
 
 // Verifica se o usuário está logado
 if (!isset($_SESSION['cpf'])) {
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
     $stmt_update->bind_param('sssss', $nome, $telefone, $endereco, $numero, $cpf);
 
     if ($stmt_update->execute()) {
-        echo "<script>alert('Cadastro atualizado com sucesso!'); window.location.href = 'chamado.php';</script>";
+        echo "<script>alert('Cadastro atualizado com sucesso!'); window.location.href = '/postvmsl/public/index.php?page=chamado';</script>";
     } else {
         echo "Erro ao atualizar o cadastro: " . $conexao->error;
     }
@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="./assets/css/pages/editar_cadastro/editar_cadastro.css">
 </head>
 <body>
-    <a id='voltar' href="chamado.php">Voltar</a>
+    <a id='voltar' href="/postvmsl/public/index.php?page=chamado">Voltar</a>
     <div class="box">
         <form action="editar_cadastro.php" method="POST">
             <fieldset>

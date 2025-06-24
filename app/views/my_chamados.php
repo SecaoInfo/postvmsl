@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('config.php');
+include_once('/../../config/config.php');
 
 // Configurar a conexão para UTF-8
 $conexao->set_charset("utf8");
@@ -43,8 +43,8 @@ $result_chamados = $stmt_chamados->get_result();
         <div class="container-fluid">
             <a class="navbar-brand" href="#">SiscOM</a>
             <div class="d-flex">
-                <a href="chamado.php" class="btn btn-secondary me-2">Voltar</a>
-                <a href="sair.php" class="btn btn-danger">Sair</a>
+                <a href="/postvmsl/public/index.php?page=chamado" class="btn btn-secondary me-2">Voltar</a>
+                <a href="/postvmsl/public/index.php?page=sair" class="btn btn-danger">Sair</a>
             </div>
         </div>
     </nav>

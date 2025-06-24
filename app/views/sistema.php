@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include_once('config.php');
+    include_once('/../../config/config.php');
 
     $conexao->set_charset("utf8mb4");
 
@@ -53,7 +53,7 @@
 
         </div>
         <div class="d-flex">
-            <a href="sair.php" class="btn btn-danger me-5">Sair</a>
+            <a href="/postvmsl/public/index.php?page=sair" class="btn btn-danger me-5">Sair</a>
         </div>
     </nav>
     <br>

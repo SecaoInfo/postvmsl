@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('config.php');
+include_once('/../../config/config.php');
 
 // Configurar a conexão para UTF-8
 $conexao->set_charset("utf8");
@@ -92,9 +92,9 @@ if (isset($_POST['submit'])) {
         </div>
         
         <div class="d-flex">
-            <a href="my_chamados.php" class="btn btn-secondary me-2">Meus Chamados</a>
-            <a href="editar_cadastro.php" class="btn btn-warning me-2">Editar Cadastro</a>
-            <a href="sair.php" class="btn btn-danger me-5">Sair</a>
+            <a href="/postvmsl/public/index.php?page=my_chamados" class="btn btn-secondary me-2">Meus Chamados</a>
+            <a href="/postvmsl/public/index.php?page=editar" class="btn btn-warning me-2">Editar Cadastro</a>
+            <a href="/postvmsl/public/index.php?page=sair" class="btn btn-danger me-5">Sair</a>
         </div>
 
     </nav>
